@@ -26,13 +26,6 @@ autocmd BufNewFile *.pl silent %! lwp-request -m GET http://tools.mediatemple.ne
 autocmd BufNewFile *.PL silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/script-examples/01-vanilla.pl
 autocmd BufNewFile *.pm silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/basic-module-only/Module.pm
 
-" perl tidy webservice
-" to use it:
-" - exit insert mode
-" - type the characters ',' 'p' and then 't'
-" - profit
-map ,pt :%! lwp-request -m POST https://tools.mediatemple.net/cgi-bin/perltidy/index.cgi<CR>
-
 " perl block folder (optionally uncomment the following lines)
 "let perl_fold = 1
 "set foldmethod=marker
