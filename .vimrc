@@ -4,7 +4,13 @@
 " (mt) Recommended
 syntax on
 set ruler
-set bg=dark
+
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
 
 " Mouse Control
 set mouse=a
