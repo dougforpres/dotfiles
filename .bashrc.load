@@ -1,6 +1,7 @@
 # include what you want
 
-export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/bin:/opt/mt/bin
+export TERM=xterm-256color
 
 # add this to the .bashrc: . $HOME/.bashrc.load
 
