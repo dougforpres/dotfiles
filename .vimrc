@@ -27,6 +27,8 @@ set shiftround
 
 set matchpairs+=<:>
 
+set incsearch ignorecase smartcase hlsearch
+
 " (mt) code template fill helpers
 autocmd BufNewFile *.pl silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/script-examples/01-vanilla.pl
 autocmd BufNewFile *.PL silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/script-examples/01-vanilla.pl
