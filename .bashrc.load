@@ -3,6 +3,12 @@
 export PATH=$PATH:$HOME/bin:/opt/mt/bin
 export TERM=xterm-256color
 
+alias ta='./Build test'
+alias tav='./Build test --verbose 1'
+alias t='./Build test --test-files '
+alias tv='./Build test --verbose 1 --test-files '
+alias tc='./Build testcover'
+
 # add this to the .bashrc: . $HOME/.bashrc.load
 
 ####
