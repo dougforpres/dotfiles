@@ -17,9 +17,9 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ $COLORS -gt 2 ]; then
-    PS1=`/sbin/ifconfig | sed '/Bcast/!d' | awk '{print $2}' | awk '{print $2}' FS=":"`':${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1=`/sbin/ifconfig | sed '/Bcast/!d' | tail -n1 | awk '{print $2}' | awk '{print $2}' FS=":"`':${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1=`/sbin/ifconfig | sed '/Bcast/!d' | awk '{print $2}' | awk '{print $2}' FS=":"`':${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1=`/sbin/ifconfig | sed '/Bcast/!d' | tail -n1 | awk '{print $2}' | awk '{print $2}' FS=":"`':${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 
 # add this to the .bashrc: . $HOME/.bashrc.load
