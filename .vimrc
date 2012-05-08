@@ -29,11 +29,6 @@ set matchpairs+=<:>
 
 set incsearch ignorecase smartcase hlsearch
 
-" (mt) code template fill helpers
-autocmd BufNewFile *.pl silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/script-examples/01-vanilla.pl
-autocmd BufNewFile *.PL silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/script-examples/01-vanilla.pl
-autocmd BufNewFile *.pm silent %! lwp-request -m GET http://tools.mediatemple.net/pbp-webservice/modulestarter/template/basic-module-only/Module.pm
-
 " perl block folder (optionally uncomment the following lines)
 "let perl_fold = 1
 "set foldmethod=marker
