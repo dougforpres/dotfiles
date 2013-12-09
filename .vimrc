@@ -17,7 +17,7 @@ set mouse=a
 
 " From Perl Best Practices
 set autoindent
-set textwidth=128
+"set textwidth=128
 set backspace=indent,eol,start
 
 set tabstop=4

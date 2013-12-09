@@ -1,6 +1,8 @@
 # include what you want
 
-export PATH=$PATH:$HOME/bin:/opt/mt/bin
+export HISTCONTROL=ignoredups
+
+export PATH=/usr/local/bin:$PATH:$HOME/bin
 export TERM=xterm-256color
 
 alias ta='./Build test'
