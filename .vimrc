@@ -29,6 +29,8 @@ set matchpairs+=<:>
 
 set incsearch ignorecase smartcase hlsearch
 
+execute pathogen#infect()
+
 " perl block folder (optionally uncomment the following lines)
 "let perl_fold = 1
 "set foldmethod=marker
