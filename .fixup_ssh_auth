@@ -1,4 +1,4 @@
 #!/bin/sh
-/bin/mdir -p ~/tmp
+/bin/mkdir -p ~/tmp
 /bin/rm ~/tmp/ssh_auth_socket
 /bin/ln -s $SSH_AUTH_SOCK ~/tmp/ssh_auth_socket
